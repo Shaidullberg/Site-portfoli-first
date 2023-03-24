@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Heebo';
+        url('Heebo-Regular/Heebo-Regular.eot') format('embedded-opentype'),
+        url('Heebo-Regular/Heebo-Regular.woff2') format('woff2'),
+        url('Heebo-Regular/Heebo-Regular.woff') format('woff'),
+        url('Heebo-Regular/Heebo-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Heebo';
+        url('Heebo-Medium/Heebo-Medium.eot') format('embedded-opentype'),
+        url('Heebo-Medium/Heebo-Medium.woff2') format('woff2'),
+        url('Heebo-Medium/Heebo-Medium.woff') format('woff'),
+        url('Heebo-Medium/Heebo-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Heebo';
+        url('Heebo-Bold/Heebo-Bold.eot') format('embedded-opentype'),
+        url('Heebo-Bold/Heebo-Bold.woff2') format('woff2'),
+        url('Heebo-Bold/Heebo-Bold.woff') format('woff'),
+        url('Heebo-Bold/Heebo-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Heebo';
+        url('Heebo-Black/Heebo-Black.eot') format('embedded-opentype'),
+        url('Heebo-Black/Heebo-Black.woff2') format('woff2'),
+        url('Heebo-Black/Heebo-Black.woff') format('woff'),
+        url('Heebo-Black/Heebo-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
