@@ -123,11 +123,12 @@ transition: scale 0.2s;
 }
 
 .about__wrap {
-    max-width: 506px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     row-gap: 30px;
     grid-area: about-wrap;
+    box-sizing: border-box;
 }
 .about__title {
     text-align: left;
@@ -150,8 +151,17 @@ transition: scale 0.2s;
 }
 
 .about__span {
-    
+    animation: text-animation 5s infinite;
 }
+
+@keyframes text-animation {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+  }
 
 
 .about__subtitle {
@@ -266,8 +276,8 @@ line-height: 60px;
 }
 
 .posts__link:hover{
-    color: #00d0ff;
-    transition: color 0.5s linear;
+    color: #27c0bd;
+    transition: color 0.2s linear;
 }
 
 .cards_place_posts {
@@ -382,36 +392,25 @@ line-height: 60px;
     padding: 10px;
     display: grid;
     grid-template-areas: 
-    'image title title'
-    'image data chapter'
-    'image texta texta';
+    'image image title'
+    'image image texta'
+    'image image texta'
+    'image image texta'
+    'image image texta';
     transition: background-color 0.5s;
     background-color: #444242;
     border-radius: 10px;
     row-gap: 20px;
     column-gap: 20px;
     padding-bottom: 10px;
-    border: 3px solid rgb(100, 163, 138);
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    box-shadow: rgba(0, 0, 0, 0.56)  0px 22px 70px 4px;;
 }
 
-@media screen and (min-width: 400px) and (max-width: 767px) {
-    .card_place_works {
-        grid-template-areas: 
-        'image image image'
-        'title title title'
-        'data chapter chapter'
-        'texta texta texta';
-    }
-}
-
-@media screen and (min-width: 320px) and (max-width: 399px) {
+@media screen and (min-width: 320px) and (max-width: 520px) {
     .card_place_works {
         grid-template-areas: 
         'image image'
         'title title'
-        'data data'
-        'chapter chapter'
         'texta texta';
     }
 }
@@ -419,18 +418,17 @@ line-height: 60px;
 
 .card__image {
     border-radius: 20px;
-    aspect-ratio: 1 / 1;
     width: 100%;
+    max-height: 460px;
     overflow: hidden;
-    object-position: center;
+    object-position:top;
     object-fit: cover;
-    grid-area: image ;
+    grid-area: image;
 }
 
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .card__image {
-        aspect-ratio: 2 / 1;
     }
 }
 
@@ -442,26 +440,6 @@ line-height: 60px;
     grid-area: title;
 }
 
-.card__data {
-    text-align: center;
-    min-width: 200px;
-    margin: 0 0 17px;
-    box-sizing: border-box;
-    font-size: 18px;
-    font-weight: 900;
-    background-color: #142850;
-    border-radius: 16px;
-    grid-area: data;
-
-}
-.card__chapter {
-    text-align: center;
-    margin: 0 0 17px;
-font-size: 20px;
-font-weight: 400;
-line-height: 29px;
-grid-area: chapter;
-}
 .card__text {
     margin: 0;
 font-size: 16px;
